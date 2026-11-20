@@ -7,6 +7,8 @@
 <title>Cielo y Luna · San Francisco del Oro</title>
 <meta name="description" content="Cielo actual, Luna de hoy y calendario lunar para San Francisco del Oro, Chihuahua.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <script src="https://cdn.jsdelivr.net/npm/astronomy-engine@2.1.19/astronomy.browser.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/satellite.js@6.0.1/dist/satellite.min.js"></script>
 <style>
@@ -3716,6 +3718,9 @@ renderCalendar();
   applyRed(storedRed());
 })();
 
+</script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("sw.js"); }
 </script>
 </body>
 </html>
